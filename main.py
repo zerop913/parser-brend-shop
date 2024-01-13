@@ -10,14 +10,14 @@ from video_downloader import download_video
 from dotenv import load_dotenv
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 
-load_dotenv()
-
 # Initialize the VKontakte API session using your app's API access token and the group ID
-VK_GROUP_TOKEN = os.getenv('VK_GROUP_TOKEN')
-VK_GROUP_ID = os.getenv('VK_GROUP_ID')
-VK_ACCESS_TOKEN = os.getenv('VK_ACCESS_TOKEN')
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
+VK_GROUP_TOKEN = 'vk1.a.jyFapNTm_phqjdO6UKIud6HKmjAWFe7b0vb4QVfQ-TzM6afWRoZIZhS7OIgs5f9uKCqqxld_LOWuMTbOoQGLg1MV6WXN9DSHuyuPn3QtuW5IaLXkDos7woqyAZkFptriicKa8oHmeIX7Nu93Z0IFJ1DCn0QVGe3PRTizpS45iOwJgQET2SRDkWolNmPUHR11RLtdGnPCKkQLgZq-WQT9DQ'
+VK_GROUP_ID = '222480874'
+VK_ACCESS_TOKEN = 'vk1.a.54eN_pMDRpWey0QrBbJ2a2Ks2Z2smVUIjSxuFmKSBJOcp30_yr5p36rpFIErgk7YjBAqpLHsjKQhh9_Zpfn8zKm5EL3pFHRnqxlHtbzXKHTWNmfy1EpAN9ut4xdGe1B85pvKwx7DwbluyFYafSli5izEDoHiI18erFDCFA3i6xgUpdfXsc3fvx8KMhVr0m6nWdLJlndN3KuTlDxHNciH7A'
+TELEGRAM_TOKEN = '6503834844:AAHMxXFQBAyCRcvs2l0tYK8Pji9ngFf2bw0'
+TELEGRAM_CHANNEL_ID = '-1001924956518'
+
+load_dotenv()
 
 vk_session = vk_api.VkApi(token=VK_ACCESS_TOKEN, api_version='5.131')
 
